@@ -8,7 +8,7 @@ public class Multiples {
         System.out.println(multiples(n,a,b));
     }
 
-    static int multiples(int n, int a, int b) {
+    public static int multiples(int n, int a, int b) {
         int count = 0; // keep track of how many multiples of a or b
 
         for (int number = 1; number < n;
@@ -19,7 +19,7 @@ public class Multiples {
         return count;
     }
 
-    static int multiples(){
+    public static int multiples(){
         return multiples(1000,3,5);
     }
 }
