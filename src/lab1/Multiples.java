@@ -2,18 +2,24 @@ package lab1;
 
 public class Multiples {
     public static void main(String[] args) {
-
-        System.out.println(multiples());
+        int n = 1000;
+        int a = 3;
+        int b = 5;
+        System.out.println(multiples(n,a,b));
     }
 
-    static int multiples() {
-        int count = 0; // keep track of how many multiples of 3 or 5
+    static int multiples(int n, int a, int b) {
+        int count = 0; // keep track of how many multiples of a or b
 
-        for (int v = 3; v < 1000;
-             v++) {
-            if (v % 3 == 0 || v % 5 == 0) ;
-            count++;
+        for (int number = 1; number < n;
+             number++) {
+            if (number % a == 0 || number % b == 0) {
+                count++;}
         }
         return count;
+    }
+
+    static int multiples(){
+        return multiples(1000,3,5);
     }
 }
